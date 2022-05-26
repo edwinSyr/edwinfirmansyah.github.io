@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.container .header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 1em 5.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #242424;
+    box-shadow: -2px -1px 13px 9px rgba(0,0,0,0.42);
+    -webkit-box-shadow: -2px -1px 13px 9px rgba(0,0,0,0.42);
+    -moz-box-shadow: -2px -1px 13px 9px rgba(0,0,0,0.42);
+}
+.container .header a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: .5px;
+}
+.container .header nav a{
+    margin: 10px;
+    transition: .5s ease-out;
+}
+.container .header nav a:hover{
+    color: #ffa331;
+}
+.container .header .logo{
+    font-size: 22px;
+}
+.header .logo h2{
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+}
+.header .logo span{
+    font-family: 'Kaushan Script', cursive;
+    color: #ffa331;
+}
+.header .profil i{
+    font-size: 17px;
+    background: #fff;
+    padding: 5px;
+    color: #242424;
+    border-radius: 5px;
+}
+.container .banner{
+    background: linear-gradient(120deg,rgba(0, 0, 0, 0.7),rgba(88, 61, 12, 0.6)), url(./images/bg-img.jpg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+.banner .textBanner{
+    text-align: center;
+    width: 600px;
+    color: #fff;
+}
+.banner .textBanner h2{
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 15px;
+    font-size: 48px;
+}
+.banner .textBanner span{
+    color: #ffa331;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner .textBanner p{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.view button{
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid #ffa331;
+    background: transparent;
+    border-radius: 50px;
+    transition: .5s ease-out;
+}
+.view button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.view button:hover{
+    border: none;
+    outline: none;
+    background: #ffffff6f;
+    color: #ffa331;
+}
+
+/* ABOUT PAGE */
+.about{
+    padding: 1.5em 5.5em;
+}
+.about h2{
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 32px;
+}
+.about span{
+    color: #ffa331;
+    font-family: 'Kaushan Script', cursive;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+.col p{
+    margin-right: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+.col img{
+    margin-left: 10px;
+    height: 500px;
+    width: 500px;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1em 2em 5em #0000;
+}
+.col .quick{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.col a{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+    text-decoration: none;
+    color: #242424;
+    transition: .5s ease-out;
+}
+.col .quick i{
+    margin-right: 5px;
+    color: #ffa331;
+}
+.col .quick a:hover{
+    transform: translateX(5px);
+}
+
+/* GALERY PAGE */
+.galery{
+    padding: 1.5em 5.5em;
+    background: #242424;
+}
+.galery h2{
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 70px;
+}
+.galery span{
+    font-family: 'Kaushan Script', cursive;
+    color: #ffa331;
+}
+.galery .imgLeft{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.galery .imgLeft img{
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+}
+.galery .imgLeft h2{
+    margin-bottom: 10px;
+}
+.galery .imgLeft p{
+    color: #fff;
+    text-align: justify;
+    width: 600px;
+    margin-left: 50px;
+}
+.galery .imgRight{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.galery .imgRight img{
+    position: absolute;
+    right: 5.5em;
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+}
+.galery .imgRight h2{
+    margin-bottom: 10px;
+}
+.galery .imgRight p{
+    color: #fff;
+    text-align: justify;
+    width: 600px;
+    margin-right: 50px;
+}
+.galery .imgColumn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+.galery .imgColumn img{
+    height: 400px;
+    width: 350px;
+    margin-right: 5px;
+    border-radius: 15px;
+}
+.videoBack{
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+@media (min-aspect-ratio: 16/9){
+    .videoBack{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .videoBack{
+        width: auto;
+        height: 100%;
+    }
+}
+.message{
+    background: linear-gradient(120deg,rgba(0, 0, 0, 0.7),rgba(88, 61, 12, 0.6)), url(./images/img7.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.message .inbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.message h2{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+}
+.message span{
+    font-family: 'Kaushan Script', cursive;
+    color: #ffa331;
+}
+.inbox form{
+    padding: 20px;
+    color: #fff;
+    width: 500px;
+    background: #242424d0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.inbox form p{
+    margin-bottom: 1px;
+}
+.inbox form input[type=text]{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ffa331;
+    background: transparent;
+}
+.inbox form textarea{
+    background: transparent;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    height: 100px;
+    border: 3px solid #ffa331;
+    border-radius: 5px;
+    outline: none;
+}
+.inbox form button{
+    padding: 10px;
+    background: #ffa331;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+.inbox form button:hover{
+    background: transparent;
+    border: 2px solid #ffa331;
+}
+.footer{
+    padding: 1.5em 5.5em;
+    background: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer .logo{
+    font-size: 22px;
+}
+.footer .logo h2{
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+}
+.footer .logo span{
+    font-family: 'Kaushan Script', cursive;
+    color: #ffa331;
+}
+.footer .logo p{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 15px;
+
+}
+.footer .reciter{
+    width: 300px;
+}
+.footer .reciter h2{
+    color: #ffa331;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+.footer .reciter p{
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer .contact h2{
+    color: #ffa331;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+}
+.footer .contact a{
+    text-decoration: none;
+}
+.footer .contact{
+    text-align: right;
+}
+.footer .contact i{
+    margin-left: 10px;
+    font-size: 26px;
+}
+.footer .contact .ig{
+    color: #e41f78;
+    transition: .5s ease-out;
+}
+.footer .contact .ig:hover{
+    transform: translateY(-5px);
+}
+.footer .contact .fb{
+    color: #1c73ec;
+    transition: .5s ease-out;
+}
+.footer .contact .fb:hover{
+    transform: translateY(-5px);
+}
+.footer .contact .email{
+    color: #fff;
+    transition: .5s ease-out;
+}
+.footer .contact .email:hover{
+    transform: translateY(-5px);
+}
